@@ -19,5 +19,10 @@ export default {
 *{
  margin: 0;
  padding: 0;
+ font-size: 14px;
+
+}
+body {
+	 background-color: #f8f8f8;
 }
 </style>

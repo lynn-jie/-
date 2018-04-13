@@ -15,24 +15,24 @@
 		<div>
 			<mt-cell title="通讯录">
 				<span>〉</span>
-				<img slot="icon" src="../../assets/shufang.png" width="24" height="24">
+				<img slot="icon" src="../../../static/imgs/shouchang.png" width="22" height="22"/>
 			</mt-cell>
 			
 			<mt-cell title="共享资源" to='/home'>
 				<span>〉</span>
-				<img slot="icon" src="../../assets/shufang.png" width="24" height="24">
+				<img slot="icon" src="../../../static/imgs/shouchang.png" width="22" height="22"/>
 			</mt-cell>
 			<mt-cell title="我的消息" to='/home'>
 				<span>〉</span>
-				<img slot="icon" src="../../assets/shufang.png" width="24" height="24">
+				<img slot="icon" src="../../../static/imgs/shouchang.png" width="22" height="22"/>
 			</mt-cell>
 			<mt-cell title="我的收藏" to='/home'>
 				<span>〉</span>
-				<img slot="icon" src="../../assets/shufang.png" width="24" height="24">
+				<img slot="icon" src="../../../static/imgs/shouchang.png" width="22" height="22"/>
 			</mt-cell>
 			<mt-cell title="阅读记录" to='/home'>
 				<span>〉</span>
-				<img slot="icon" src="../../assets/shufang.png" width="24" height="24">
+				<img slot="icon" src="../../../static/imgs/shouchang.png" width="22" height="22"/>
 			</mt-cell>
 
 		</div>
@@ -67,7 +67,19 @@
 		data() {
 			return {
 				selected: '首页',
-				msg: 'Welcome to Your Vue.js App'
+				msg: 'Welcome'
+			}
+		},
+		watch: {	
+			selected: function(val, oldVal) {
+				// 这里就可以通过 val 的值变更来确定
+				console.log(val)
+				if(val == '我的') {
+					this.$router.push({path: 'myself'})
+				}
+				else if (val == '首页'){
+					this.$router.push({path: '/'})
+				}
 			}
 		}
 	}
@@ -88,7 +100,7 @@
 	
 	.myself {
 		width: 100%;
-		height: 270px;
+		height: 250px;
 		background: #27ba69;
 		overflow: hidden;
 	}
@@ -137,5 +149,8 @@
 		color: #FFFFFF;
 		font-size: 16px;
 		font: "微软雅黑";
+	}
+	.mint-cell {
+		min-height: 60px;
 	}
 </style>

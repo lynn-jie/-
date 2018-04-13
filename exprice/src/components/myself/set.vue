@@ -1,48 +1,55 @@
 <template>
 	<div>
 		<div class="set">
-			<mt-header title="设置">
-				<router-link to="/myself" slot="left">
-					<mt-button icon="back"></mt-button>
-				</router-link>
-			</mt-header>
-			<div @click="actionSheet">
-			<mt-cell title="头像" >
-				<mint-cell-value class="explain">
-					<img slot="icon" src="../../assets/fanxian.png" width="40" height="40">
-				</mint-cell-value>
-				<span>〉</span>
-
-			</mt-cell>
+			<div class="head-top">
+				<mt-header title="设置">
+					<router-link to="/myself" slot="left">
+						<mt-button icon="back"></mt-button>
+					</router-link>
+				</mt-header>
 			</div>
-			<mt-cell title="昵称">
-				<mint-cell-value class="explain">孙悟空</mint-cell-value>
-				<span>〉</span>
-			</mt-cell>
-			<mt-cell title="密码">
-				<span>〉</span>
-			</mt-cell>
-			<mt-cell title="清除缓存">
-				<span>0KB</span>
-			</mt-cell>
-			<mt-cell title="当前版本">
-				<span>V1.0</span>
-			</mt-cell>
-			<mt-cell title="关于我们">
-				<span>〉</span>
-			</mt-cell>
+			<div class="set-list">
+				
+				<mt-cell title="头像" >
+					<div  @click="actionSheet">
+						<mint-cell-value class="explain">
+							<img slot="icon" src="../../assets/fanxian.png" width="40" height="40">
+						</mint-cell-value>
+						<span>〉</span>
+					</div>
+				</mt-cell>
+			
 
+				<mt-cell title="昵称" to ='/nickname'>
+					<mint-cell-value class="explain">孙悟空</mint-cell-value>
+					<span>〉</span>
+				</mt-cell>
+				<mt-cell title="密码" to ='/changepsw'>
+					<span>〉</span>
+				</mt-cell>
+				<mt-cell title="清除缓存">
+					<span>0KB</span>
+				</mt-cell>
+				<mt-cell title="当前版本">
+					<span>V1.0</span>
+				</mt-cell>
+				<mt-cell title="关于我们" to= '/abutus'>
+					<span>〉</span>
+				</mt-cell>
+				
+			</div>
+			
 		</div>
 
 		<div class="btn">
 			<mt-button size="large">退出登录</mt-button>
 		</div>
 	
-	<div>  
-    <input type="file" accept="image/*" capture="camera">  
-    <input type="file" accept="video/*" capture="camcorder">  
-    <input type="file" accept="audio/*" capture="microphone">  
-</div>
+	<!--<div>  
+	    <input type="file" accept="image/*" capture="camera">  
+	    <input type="file" accept="video/*" capture="camcorder">  
+	    <input type="file" accept="audio/*" capture="microphone">  
+	</div>-->
 			
 
 		<mt-actionsheet :actions="datalist" v-model="sheetVisible">
@@ -92,6 +99,7 @@
 	.mint-header {
 		height: 44px;
 		background-color: #35c564;
+		font-size: 18px;
 	}
 	
 	.mint-cell {
@@ -111,5 +119,15 @@
 		background-color: #35c564;
 		color: #FFFFFF;
 		font: 16px/16px "微软雅黑";
+		height: 50px;
+		
 	}
+	.head-top {
+		margin-bottom: 18px;
+	}
+	
+	.mint-cell-text{
+		font: 16px/16px "微软雅黑";
+	}
+	
 </style>
