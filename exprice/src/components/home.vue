@@ -153,7 +153,7 @@
 	}
 	
 	.home-title {
-		height: 7vh;
+		height: 6vh;
 		background: #2AB969;
 		display: flex;
 		justify-content: space-between;
@@ -196,11 +196,13 @@
 		justify-content: space-between;
 		align-items: center;
 		padding: 8px;
-		margin-top: 7vh;
+		margin-top: 5vh;
+		
 		/*position: fixed;*/
 		/*left: 0;
 		top: 0;*/
 	}
+	
 	
 	.home-nav .nav-title {
 		font-size: 16 px;

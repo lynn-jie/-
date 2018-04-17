@@ -10,8 +10,9 @@
 				</div>
 			</div>
 			<p>我是孙悟空</p>
-			<p>累计阅读 <b>100</b> 天</p>
+			<p>累计阅读  100  天</p>
 		</div>
+		
 		<div>
 			<mt-cell title="通讯录">
 				<span>〉</span>
@@ -59,8 +60,6 @@
 </template>
 
 <script>
-	import { Tabbar, TabItem } from 'mint-ui';
-	import { Cell } from 'mint-ui';
 
 	export default {
 		name: 'myself',
@@ -86,6 +85,11 @@
 </script>
 
 <style scoped>
+	.mint-cell {
+		margin-top: 2px;
+	}
+	
+	
 	.clearfloat:after {
 		display: block;
 		clear: both;
@@ -135,6 +139,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		overflow: hidden;
 		
 		
 	}

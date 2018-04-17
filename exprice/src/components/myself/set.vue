@@ -59,9 +59,7 @@
 </template>
 
 <script>
-	import { Header } from 'mint-ui';
-	import { Button } from 'mint-ui';
-	import { Actionsheet } from 'mint-ui';
+
 
 	export default {
 		name: 'set',
@@ -96,6 +94,10 @@
 </script>
 
 <style scoped>
+	
+	.mint-cell {
+		margin-top: 2px;
+	}
 	.mint-header {
 		height: 44px;
 		background-color: #35c564;

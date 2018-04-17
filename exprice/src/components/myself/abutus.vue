@@ -63,17 +63,17 @@
 		
 	}
 	.abutus p:nth-of-type(1) {
-		font: 18px/18px "微软雅黑";
+		font: 18px/18px "microsoft yahei";
 	
 	}
 	.abutus p:nth-of-type(2) {
-		font: 16px/16px "微软雅黑";
+		font: 16px/16px "microsoft yahei";
 	}
 	.abutus p:nth-of-type(3) {
-		font: 14px/14px "微软雅黑";
+		font: 14px/14px "microsoft yahei";
 	}
 	.abutus p:nth-of-type(4) {
-		font: 16px/16px "微软雅黑";
+		font: 16px/16px "microsoft yahei";
 		
 		margin-top: 42vh;
 		color: #3cba78;

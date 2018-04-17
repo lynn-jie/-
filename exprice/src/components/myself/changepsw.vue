@@ -22,11 +22,13 @@
 </template>
 
 <script>
-	import { Header } from 'mint-ui';
-	import { Field } from 'mint-ui';
+	
 </script>
 
 <style scoped>
+	.mint-cell {
+		margin-top: 2px;
+	}
 	/*head style*/
 	
 	.mint-header {

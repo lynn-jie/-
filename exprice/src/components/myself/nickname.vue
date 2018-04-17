@@ -20,7 +20,7 @@
 </template>
 
 <script>
-	import { Header } from 'mint-ui';
+	
 	
 	
 </script>

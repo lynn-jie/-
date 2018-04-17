@@ -159,8 +159,9 @@
 <style scoped>
 	.home-swipe {
 		width: 100%;
-		height: 25vh;
+		height: 21vh;
 		background: skyblue;
+		margin-top: 2px;
 	}
 	
 	.home-main {
@@ -180,13 +181,13 @@
 	}
 	
 	.home-main .subtitle h3 {
-		font-size: 0.18rem;
+		font-size: 18px;
 		color: black;
 		font-weight: 800;
 	}
 	
 	.home-main .subtitle span {
-		font-size: 0.16rem;
+		font-size: 14px;
 		color: #b6b6b6;
 	}
 	
@@ -197,7 +198,7 @@
 	}
 	
 	.home-main .content .sm-content {
-		width: 30%;
+		width: 26%;
 		/*background: slateblue;*/
 		overflow: hidden;
 	}
@@ -214,7 +215,7 @@
 	
 	.home-main .content .sm-content span {
 		width: 100%;
-		font: "微软雅黑";
+		font-family: "微软雅黑";
 		/*background: red;*/
 	}
 	/*audio*/
@@ -307,7 +308,7 @@
 	}
 	
 	.read-content .read-right .read-subtitle {
-		font: "微软雅黑";
+		font-family: "微软雅黑";
 		font-size: 0.17rem;
 		margin-bottom: 1vh;
 	}
